@@ -380,7 +380,7 @@ type GetNetworkInfoResult struct {
 	RelayFee        float64                `json:"relayfee"`
 	IncrementalFee  float64                `json:"incrementalfee"`
 	LocalAddresses  []LocalAddressesResult `json:"localaddresses"`
-	Warnings        string                 `json:"warnings"`
+	Warnings        []string               `json:"warnings"`
 }
 
 // GetNodeAddressesResult models the data returned from the getnodeaddresses
